@@ -1,0 +1,9 @@
+# DRAFT by Claude from topics Hugues sent, to be reviewed by Hugues.
+# must_cover: key facts a good set of claims + cards should contain (any one term of an item is enough).
+language: fr
+must_cover:
+  - { id: kufra, any: ["koufra", "kufra"] }
+  - { id: chad, any: ["tchad"] }
+  - { id: paris, any: ["paris"] }
+  - { id: strasbourg, any: ["strasbourg"] }
+  - { id: normandy, any: ["normandie", "utah beach"] }

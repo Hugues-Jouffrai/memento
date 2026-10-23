@@ -1,0 +1,10 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [full]
+language: en
+kind: web_page
+cluster: fsrs
+must_cover:
+  - { id: fsrs, any: ["FSRS"] }
+  - { id: desired-retention, any: ["desired retention"] }
+  - { id: optimizer, any: ["optimize", "optimizer", "optimise"] }
+forbidden: []

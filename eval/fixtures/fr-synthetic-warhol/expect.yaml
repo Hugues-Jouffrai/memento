@@ -1,0 +1,9 @@
+# SYNTHETIC fixture written by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: fr
+kind: sparse_note
+note: Sparse note. Claims must stay within what the note says.
+must_cover:
+  - { id: marilyn, any: ["Marilyn"] }
+  - { id: repetition, any: ["répétition"] }
+forbidden: ["1962", "Factory", "Campbell"]

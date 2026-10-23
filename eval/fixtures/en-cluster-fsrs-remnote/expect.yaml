@@ -1,0 +1,10 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: web_page
+cluster: fsrs
+note: Help-centre capture with menus; the useful part is the FSRS section.
+must_cover:
+  - { id: fsrs, any: ["FSRS"] }
+  - { id: retention, any: ["retention"] }
+forbidden: []

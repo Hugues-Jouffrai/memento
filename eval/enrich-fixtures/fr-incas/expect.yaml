@@ -1,0 +1,9 @@
+# DRAFT by Claude from topics Hugues sent, to be reviewed by Hugues.
+# must_cover: key facts a good set of claims + cards should contain (any one term of an item is enough).
+language: fr
+must_cover:
+  - { id: pachacutec, any: ["pachacutec", "pachacuti"] }
+  - { id: cuzco, any: ["cuzco", "cusco"] }
+  - { id: civil_war, any: ["atahualpa", "huascar", "huáscar"] }
+  - { id: pizarro, any: ["pizarro"] }
+  - { id: tahuantinsuyu, any: ["tahuantinsuyu", "tawantinsuyu"] }

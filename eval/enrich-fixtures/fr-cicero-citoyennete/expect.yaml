@@ -1,0 +1,9 @@
+# DRAFT by Claude from topics Hugues sent, to be reviewed by Hugues.
+# must_cover: key facts a good set of claims + cards should contain (any one term of an item is enough).
+language: fr
+must_cover:
+  - { id: social_war, any: ["guerre sociale", "guerre des alliés"] }
+  - { id: lex_julia, any: ["lex iulia", "lex julia", "loi julia", "90 av"] }
+  - { id: arpinum, any: ["arpinum"] }
+  - { id: homo_novus, any: ["homo novus", "homme nouveau"] }
+  - { id: greek_philosophy, any: ["philosoph"] }

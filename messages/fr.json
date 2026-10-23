@@ -1,0 +1,573 @@
+{
+  "app": {
+    "name": "{brand}",
+    "tagline": "Envoie une note par e-mail, retiens-la pour de bon."
+  },
+  "home": {
+    "title": "Aujourd'hui",
+    "dueToday": "{count, plural, =0 {Rien à réviser aujourd'hui} one {# carte à réviser aujourd'hui} other {# cartes à réviser aujourd'hui}}",
+    "newToday": "{count, plural, =0 {} one {dont # nouvelle} other {dont # nouvelles}}",
+    "minutes": "Environ {minutes} min",
+    "trayCount": "{count, plural, =0 {Aucune carte à valider} one {# carte à valider} other {# cartes à valider}}",
+    "startReview": "Commencer la révision",
+    "openTray": "Voir les cartes à valider",
+    "next7": "7 prochains jours",
+    "captureAddress": "Envoie tes notes à cette adresse",
+    "captureHint": "Depuis l'adresse e-mail de ton compte uniquement.",
+    "captureFallback": "Autre adresse (si ton fournisseur bloque)",
+    "today": "Aujourd'hui",
+    "dueLabel": "{count, plural, =0 {rien à réviser aujourd'hui} one {carte à réviser aujourd'hui} other {cartes à réviser aujourd'hui}}",
+    "copy": "Copier",
+    "copied": "Copié"
+  },
+  "login": {
+    "title": "Connexion",
+    "emailLabel": "Ton adresse e-mail",
+    "sendCode": "Recevoir un code",
+    "codeSent": "Si ton adresse est connue, un e-mail avec un code à 6 chiffres vient de partir. Il est valable 15 minutes, et seul le code du dernier e-mail reçu fonctionne.",
+    "codeLabel": "Code à 6 chiffres",
+    "verify": "Me connecter",
+    "error": {
+      "invalid_email": "Adresse e-mail invalide.",
+      "invalid_code": "Le code doit contenir 6 chiffres.",
+      "bad_code": "Code incorrect ou expiré. Seul le code du dernier e-mail reçu fonctionne : demande-en un nouveau.",
+      "rate_limited": "Trop de demandes. Réessaie dans {seconds, plural, one {# seconde} other {# secondes}}.",
+      "link": "Ce lien a déjà servi ou a expiré. Demande un nouveau code, puis saisis-le ici."
+    },
+    "newCode": "Recevoir un nouveau code",
+    "newCodeWait": "Nouveau code possible dans {seconds, plural, one {# seconde} other {# secondes}}",
+    "noAddress": "Saisis ton adresse et le code du dernier e-mail reçu."
+  },
+  "help": {
+    "title": "Comment ça marche",
+    "intro": "Tu envoies une note par e-mail : elle devient une fiche et des cartes proposées. Tu valides les cartes, puis tu révises un peu chaque jour.",
+    "send": {
+      "title": "Envoyer",
+      "address": "Ton adresse d'envoi est {address}. Écris depuis l'adresse de ton compte ({accountEmail}), sinon le message est refusé.",
+      "what": "Tu peux envoyer quelques mots, un lien, un PDF ou une photo, jusqu'à {maxItems} sources par e-mail. Un fichier peut peser jusqu'à {maxFileMb} Mo, une photo jusqu'à {maxPhotoMb} Mo.",
+      "receipt": "Les cartes proposées arrivent dans l'écran des cartes à valider, avec la liste de tes mails reçus en bas de page. Si le traitement échoue, un e-mail te dit pourquoi et ce qu'il faut faire.",
+      "try": "Essayer maintenant",
+      "tryHint": "Ça ouvre ta messagerie avec une note d'exemple, à modifier avant d'envoyer. Les cartes arrivent dans l'écran des cartes à valider en quelques minutes."
+    },
+    "tray": {
+      "title": "{tray}",
+      "keep": "Les cartes proposées attendent dans « {tray} ». Rien n'entre dans tes révisions sans que tu l'aies gardé : « {keep} », « {discard} » ou « {keepAll} ».",
+      "badge": "Le badge « {badgeModel} » veut dire que la carte vient des connaissances de l'IA et pas de ta source."
+    },
+    "review": {
+      "title": "{review}",
+      "grades": "« {show} », puis note-toi avec quatre boutons : « {again} », « {hard} », « {good} », « {easy} ».",
+      "forgot": "Si tu as oublié, choisis toujours « {again} », jamais « {hard} ».",
+      "budget": "Ton temps de révision par jour est de {budget} min (choix possibles : {presets}). Quand la journée est pleine, les nouvelles cartes attendent. Une fois le temps écoulé, tu peux choisir « {continueAnyway} ».",
+      "edit": "« {edit} » corrige la formulation d'une carte ; « {suspend} » la retire de tes révisions."
+    },
+    "reminder": {
+      "title": "Le rappel",
+      "when": "Un rappel part à {reminderTime} les jours de révision, seulement s'il y a quelque chose à faire.",
+      "link": "Son lien ouvre la session sans connexion pendant {tokenHours} h. Il ne permet que de réviser : ni modification, ni fiches, ni « {settings} ».",
+      "pause": "Tu peux mettre le rappel en pause ou l'arrêter depuis le mail ou depuis « {settings} »."
+    },
+    "pages": {
+      "title": "{pages} / {settings}",
+      "pages": "Chaque envoi crée ou enrichit une fiche, avec ses sources ; tu les retrouves dans « {pages} ».",
+      "settings": "Dans « {settings} », tu règles ton temps de révision, tes jours, le nombre de nouvelles cartes, la rétention visée, le fuseau, la langue, le style, les rappels et tes données."
+    }
+  },
+  "onboarding": {
+    "title": "Premiers pas",
+    "step": {
+      "capture": "Envoyer une première note à ton adresse",
+      "keep": "Garder une première carte proposée",
+      "review": "Faire une première révision"
+    },
+    "done": "fait",
+    "todo": "à faire",
+    "hide": "Masquer",
+    "hideHint": "Tu retrouves l'aide dans « {settings} ».",
+    "help": "Comment ça marche",
+    "sampleSubject": "Ma première note",
+    "sampleBody": "Ce week-end, j'ai appris que les abeilles communiquent en dansant. Je veux retenir comment elles indiquent la direction du nectar.",
+    "tryNow": "Essayer maintenant",
+    "helpLink": "Comment ça marche"
+  },
+  "account": {
+    "exportTitle": "Mes données",
+    "export": "Télécharger mes données",
+    "exportHint": "Un fichier zip : tes fiches en Markdown, tes sources, tes cartes et tes révisions en CSV.",
+    "delete": "Supprimer mon compte",
+    "deleteTitle": "Supprimer mon compte",
+    "deleteWarning": "Cette action est immédiate et définitive : ton compte, tes fiches, tes sources, tes cartes, tes révisions et tes fichiers originaux sont effacés. Il n'y a pas de retour en arrière.",
+    "exportFirst": "Télécharger d'abord mes données",
+    "typeEmail": "Pour confirmer, saisis ton adresse e-mail",
+    "mismatch": "Cette adresse ne correspond pas à celle de ton compte.",
+    "deleteConfirm": "Supprimer définitivement",
+    "cancel": "Annuler",
+    "deleted": "Ton compte et toutes tes données ont été supprimés.",
+    "privacyLink": "Confidentialité",
+    "signedIn": "Connecté : {email}",
+    "signOut": "Me déconnecter"
+  },
+  "about": {
+    "title": "Pourquoi ça marche",
+    "lede": "{brand} repose sur quelques résultats de recherche sur la mémoire, et sur quelques choix de produit. Cette page dit lesquels, d'où ils viennent, et où s'arrêtent les preuves.",
+    "roles": {
+      "theory": "La théorie",
+      "algorithm": "L'algorithme",
+      "memento": "Dans {brand}"
+    },
+    "sections": {
+      "forgetting": {
+        "title": "Oublier est normal",
+        "theory": "On oublie vite ce qu'on vient d'apprendre, puis de plus en plus lentement. Les chercheurs appellent cela la courbe de l'oubli. Chaque fois qu'on se rappelle une information avec succès, elle s'efface plus lentement.",
+        "memento": "Chaque carte revient donc à un intervalle qui s'allonge quand tu la retrouves."
+      },
+      "testing": {
+        "title": "Se tester vaut mieux que relire",
+        "theory": "Chercher la réponse dans sa mémoire aide davantage à retenir que relire le cours ou surligner. Dans une synthèse de la littérature sur dix techniques d'étude, l'autotest figure parmi les deux techniques jugées les plus utiles.",
+        "memento": "{brand} te montre d'abord la question et te laisse répondre de tête avant de révéler la réponse."
+      },
+      "spacing": {
+        "title": "Espacer les révisions",
+        "theory": "Réviser en plusieurs fois, avec des pauses, retient mieux que tout revoir d'un coup. Les auteurs de la même synthèse placent aussi l'espacement parmi les deux techniques les plus utiles. L'écart idéal dépend du temps pendant lequel on veut se souvenir : plus la date visée est lointaine, plus les révisions peuvent être espacées.",
+        "memento": "Chaque réponse réussie allonge l'écart avant la prochaine révision de la carte."
+      },
+      "fsrs": {
+        "title": "Comment {brand} choisit la prochaine date",
+        "algorithm": "{brand} utilise un algorithme libre et public, FSRS. Pour chaque carte, il suit trois choses : sa difficulté, la solidité du souvenir et la probabilité de se souvenir aujourd'hui.",
+        "memento": "Quand tu notes une réponse ({again}, {hard}, {good}, {easy}), il recalcule la prochaine date, de façon que la chance de se souvenir reste proche du niveau que tu as choisi dans les paramètres. La valeur par défaut est {retention} %."
+      },
+      "cards": {
+        "title": "Pourquoi les cartes passent par toi",
+        "memento": "L'IA lit ce que tu envoies et propose des cartes ; elle n'en ajoute aucune à tes révisions sans ton accord. Les faits tirés de ta source citent leur extrait ; ce que l'IA ajoute de ses propres connaissances est signalé comme non vérifié. Ce n'est pas un résultat de recherche."
+      },
+      "budget": {
+        "title": "Peu de minutes, chaque jour",
+        "memento": "{brand} limite le temps de révision que tu fixes par jour : quand la journée est pleine, les nouvelles cartes attendent. Ce n'est pas un résultat de recherche : c'est pour que le rythme reste tenable."
+      }
+    },
+    "source": "Source :",
+    "limitsTitle": "Limites",
+    "limits": "Ces résultats viennent d'études en laboratoire et en classe, surtout sur des listes de mots et des cours ; ils ne garantissent rien pour une personne en particulier. FSRS est un modèle de la mémoire, pas une mesure de la tienne. Les cartes écrites par une IA peuvent se tromper : relis-les avant de les garder.",
+    "sourcesTitle": "Sources",
+    "helpLink": "Pourquoi ça marche : la théorie et les sources"
+  },
+  "privacy": {
+    "title": "Confidentialité",
+    "lede": "{brand} est en bêta, développé par une personne. Voici ce qui est gardé, par qui, et comment tout effacer.",
+    "storeTitle": "Ce qui est gardé",
+    "store": "Les e-mails que tu envoies (texte, liens, pièces jointes), le texte lu depuis les liens et les fichiers, les fiches et les cartes qui en sont tirées, ton historique de révision, tes réglages et ton adresse e-mail. Rien d'autre : pas de publicité, pas de revente, pas de suivi.",
+    "processorsTitle": "Qui traite tes données",
+    "processors": {
+      "gemini": {
+        "name": "Google (API Gemini)",
+        "role": "lit ton contenu pour en tirer des faits et des cartes, et pour le comparer à tes fiches."
+      },
+      "supabase": {
+        "name": "Supabase",
+        "role": "base de données et fichiers, hébergés dans la région eu-west-3 (Paris)."
+      },
+      "resend": {
+        "name": "Resend",
+        "role": "envoi et réception des e-mails (échecs de traitement, rappels, codes de connexion, confirmation de la liste d'attente)."
+      },
+      "vercel": {
+        "name": "Vercel",
+        "role": "hébergement de l'application."
+      },
+      "cloudflare": {
+        "name": "Cloudflare",
+        "role": "gestion du nom de domaine uniquement ; le contenu de tes e-mails n'y passe pas."
+      }
+    },
+    "noTrainTitle": "Entraînement des modèles",
+    "noTrain": "L'appel à l'IA se fait avec l'offre payante de Google, dont les conditions prévoient que le contenu n'est pas utilisé pour améliorer ses produits.",
+    "yourRightsTitle": "Tes droits",
+    "yourRights": "Dans les paramètres, tu peux télécharger toutes tes données et supprimer ton compte. La suppression est immédiate : le compte, les fiches, les cartes, l'historique et les fichiers originaux sont effacés. Il ne reste que des lignes de coût sans contenu ni identité.",
+    "waitlistTitle": "Liste d'attente",
+    "waitlist": "Si tu laisses ton adresse sur la page d'accueil pour être prévenu de l'ouverture, un e-mail de confirmation part et rien n'est enregistré tant que tu n'as pas cliqué sur son bouton. Après ta confirmation, seuls ton adresse, la langue de la page et la date de confirmation sont gardés. L'adresse sert uniquement à t'envoyer un e-mail le jour de l'ouverture : pas d'autre envoi, pas de partage, pas de suivi. Elle est effacée au plus tard {months} mois après ta confirmation.",
+    "waitlistRemove": "Pour la retirer avant, utilise le lien « {leaveLink} » de l'e-mail de confirmation. Tu l'as perdu ? Saisis à nouveau ton adresse sur la page d'accueil : le nouvel e-mail contient aussi ce lien.",
+    "waitlistAbuse": "Pour limiter les abus, une empreinte (hash) de l'adresse e-mail et de l'adresse réseau (IP) de chaque demande est gardée au plus deux jours.",
+    "contactTitle": "Contact",
+    "contact": "Pour toute question, demande à la personne qui t'a invité."
+  },
+  "landing": {
+    "metaDescription": "Envoie un lien, un PDF, une photo ou deux lignes par e-mail : {brand} en tire des cartes et te les fait réviser un peu chaque jour. Bêta fermée.",
+    "hook": "Tu envoies un lien, un PDF, une photo ou deux lignes à une adresse e-mail. {brand} en tire des cartes à retenir et te les fait réviser un peu chaque jour.",
+    "notify": {
+      "title": "Être prévenu de l'ouverture",
+      "lede": "La bêta est fermée, sur invitation. Laisse ton adresse : une fois confirmée, tu ne recevras qu'un e-mail, le jour où {brand} ouvrira à tous.",
+      "submit": "Me prévenir",
+      "consent": "Ton adresse sert seulement à te prévenir de l'ouverture. Rien d'autre, et tu peux la retirer quand tu veux. <link>Ce qui est gardé</link>",
+      "honeypot": "Ne remplis pas ce champ",
+      "status": {
+        "sent": "C'est presque fait : un e-mail de confirmation vient de partir. Clique sur son bouton pour être sur la liste. Rien reçu ? Regarde dans les indésirables.",
+        "invalid": "Adresse e-mail invalide.",
+        "limited": "Trop de demandes pour le moment. Réessaie plus tard.",
+        "failed": "L'e-mail n'a pas pu partir. Réessaie dans un moment."
+      }
+    },
+    "already": "J'ai déjà un compte",
+    "steps": {
+      "title": "En trois temps",
+      "send": {
+        "title": "Tu envoies",
+        "text": "Écris à ton adresse {brand} depuis ta messagerie : quelques mots sur une visite, un lien vers un article, un PDF, la photo d'un panneau de musée. Les cartes proposées arrivent dans l'écran des cartes à valider ; si quelque chose échoue, un e-mail te l'explique."
+      },
+      "sort": {
+        "title": "Tu valides",
+        "text": "{brand} range ce que tu envoies dans des fiches par sujet et propose quelques cartes question-réponse. Tu gardes celles qui valent la peine, tu écartes les autres."
+      },
+      "review": {
+        "title": "Tu révises",
+        "text": "Quelques minutes par jour, les cartes reviennent quand il est temps de les revoir. Tu dis si tu t'en souvenais, et le calendrier s'ajuste."
+      }
+    },
+    "diff": {
+      "title": "Ce qui change",
+      "choose": "Tu choisis ce qui entre dans tes révisions : aucune carte n'y arrive sans ton accord.",
+      "sources": "Chaque fait cite sa source. Ce que l'IA ajoute de ses propres connaissances est signalé comme tel.",
+      "reminder": "Un rappel par e-mail à l'heure que tu choisis, seulement les jours où il y a quelque chose à faire.",
+      "budget": "Un temps de révision par jour que tu fixes : quand la journée est pleine, les nouvelles cartes attendent."
+    },
+    "beta": {
+      "title": "Une bêta, faite par une personne",
+      "text": "{brand} est en bêta fermée, développé par une seule personne. Pas de publicité, pas de revente, pas de suivi. Des choses vont encore changer.",
+      "privacyLink": "Ce qui est gardé et comment tout effacer"
+    }
+  },
+  "waitlist": {
+    "confirm": {
+      "title": "Confirmer ton adresse",
+      "question": "Ajouter {email} à la liste des personnes prévenues quand {brand} ouvrira à tous ?",
+      "button": "Confirmer",
+      "done": "C'est noté. Tu recevras un seul e-mail, le jour de l'ouverture."
+    },
+    "leave": {
+      "title": "Te retirer de la liste",
+      "question": "Retirer {email} de la liste d'attente de {brand} ?",
+      "button": "Me retirer",
+      "done": "C'est fait : cette adresse n'est pas sur la liste."
+    },
+    "leaveLink": "Me retirer de la liste",
+    "invalid": "Ce lien n'est pas valable ou a expiré. Tu peux laisser à nouveau ton adresse sur la page d'accueil : le nouvel e-mail contient un lien neuf.",
+    "failed": "Une erreur est survenue. Réessaie dans un moment.",
+    "home": "Retour à l'accueil"
+  },
+  "unsubscribe": {
+    "title": "Rappels par e-mail",
+    "invalid": "Ce lien n'est pas valable. Utilise le lien d'un rappel récent, ou les paramètres de l'application.",
+    "state": {
+      "on": "Les rappels sont actifs.",
+      "week": "Les rappels sont en pause pour une semaine.",
+      "month": "Les rappels sont en pause pour un mois.",
+      "off": "Les rappels sont arrêtés."
+    },
+    "choice": {
+      "week": "Pause d'une semaine",
+      "month": "Pause d'un mois",
+      "off": "Arrêter les rappels",
+      "on": "Reprendre les rappels"
+    },
+    "done": {
+      "week": "C'est noté : plus de rappel pendant une semaine.",
+      "month": "C'est noté : plus de rappel pendant un mois.",
+      "off": "C'est noté : tu ne recevras plus de rappel. Tu es toujours prévenu si une note échoue.",
+      "on": "C'est noté : les rappels reprennent."
+    }
+  },
+  "join": {
+    "title": "Rejoindre la bêta",
+    "lede": "Tu as reçu une invitation. Saisis ton adresse e-mail : tu recevras un code pour te connecter.",
+    "emailLabel": "Ton adresse e-mail",
+    "submit": "Recevoir mon code",
+    "already": "Tu as déjà un compte ? Ne l'utilise pas ici : va sur la page de connexion, c'est plus rapide et ça évite d'atteindre la limite de demandes.",
+    "loginLink": "Aller à la page de connexion",
+    "error": {
+      "invalid_email": "Adresse e-mail invalide.",
+      "invalid_invite": "Cette invitation n'est plus valable. Demande-en une nouvelle à la personne qui te l'a envoyée.",
+      "rate_limited": "Trop de demandes. Réessaie dans un moment. Si tu as déjà un compte, utilise la page de connexion.",
+      "failed": "Une erreur est survenue. Réessaie dans un moment."
+    }
+  },
+  "email": {
+    "receipt": {
+      "doneSubject": "Reçu : {title}",
+      "doneIntro": "J'ai bien lu ta note « {title} ».",
+      "summaryTitle": "Ce que j'ai retenu",
+      "pageLine": "Fiche créée : {title}.",
+      "pageUpdatedLine": "Fiche enrichie : {title}.",
+      "cardsLine": "{count, plural, =0 {Aucune carte proposée.} one {# carte proposée.} other {# cartes proposées.}}",
+      "trayCta": "Choisir mes cartes",
+      "trayLink": "Choisis les cartes à garder : {url}",
+      "groupSubject": "Reçu : {title} ({count} sources)",
+      "groupIntro": "J'ai lu les {count} éléments de ton mail « {title} ».",
+      "groupDone": "{title} : fiche « {page} », {count, plural, =0 {aucune carte proposée} one {# carte proposée} other {# cartes proposées}}.",
+      "groupDuplicate": "{title} : déjà dans ta base, rien d'ajouté.",
+      "groupFailed": "{title} : non traité.",
+      "failedSubject": "Je n'ai pas pu traiter ta note",
+      "failedIntro": "Ta note « {title} » n'a pas pu être traitée.",
+      "untitled": "(sans titre)",
+      "reason": {
+        "too_short": "Elle est trop courte pour que j'en tire quelque chose. Ajoute quelques phrases, ou transfère-moi l'article lui-même.",
+        "no_claims": "Je n'ai pas réussi à en extraire des faits fiables. Essaie de coller le texte directement dans le mail.",
+        "fetch_error": "Je n'ai pas pu lire le contenu du mail. Renvoie-le dans quelques minutes.",
+        "ai_error": "Mon analyse a échoué après plusieurs essais. Renvoie la note dans quelques minutes.",
+        "unknown": "Une erreur inattendue s'est produite. Renvoie la note dans quelques minutes.",
+        "paywall": "La page est réservée aux abonnés ou demande une connexion. Copie le texte de l'article dans un nouveau mail.",
+        "empty_page": "Je n'ai trouvé presque aucun texte sur cette page (elle se charge peut-être par script). Copie le texte de l'article dans un nouveau mail.",
+        "url_blocked": "Je ne peux pas ouvrir ce lien (adresse non autorisée). Copie le texte de la page dans un nouveau mail.",
+        "page_error": "La page n'a pas pu être chargée (elle n'existe plus ou refuse les accès). Vérifie le lien ou copie le texte dans un nouveau mail.",
+        "unsupported_link": "Ce lien ne mène pas à une page web lisible (fichier ou document). Envoie le fichier en pièce jointe.",
+        "file_too_large": "Le fichier est trop volumineux (25 Mo maximum, 15 Mo pour un document scanné ou une image). Envoie une version plus légère.",
+        "unsupported_file": "Je ne lis que les PDF et les images (photos, captures d'écran). Envoie le contenu dans ce format ou colle le texte dans le mail.",
+        "unreadable_file": "Je n'ai rien pu lire dans ce fichier (protégé par un mot de passe, abîmé ou vide). Essaie une autre version ou colle le texte dans le mail."
+      },
+      "truncated": "La page est longue : j'ai lu le début seulement.",
+      "ignoredLinks": "Liens non traités (au-delà de {max} sources par mail) :",
+      "ignoredFiles": "Pièces jointes ignorées (formats non pris en charge ou au-delà de {max} sources par mail) :"
+    },
+    "duplicateSubject": "Déjà dans ta base : {title}",
+    "duplicateIntro": "Cette note est déjà dans ta base de connaissances, je n'ai rien ajouté de nouveau.",
+    "footer": "Bêta — tu reçois ce message parce que tu as un compte.",
+    "reminderLinkNote": "Ce lien ouvre ta session de révision sans connexion pendant 24 h.",
+    "kicker": {
+      "receipt": "Reçu",
+      "failed": "Échec",
+      "reminder": "Rappel",
+      "quota": "En attente",
+      "signin": "Connexion"
+    },
+    "signin": {
+      "title": "Ton accès à {brand}",
+      "intro": "Saisis ce code sur la page de connexion de {brand}.",
+      "cta": "Ouvrir la page de connexion",
+      "validity": "Le code est valable 15 minutes et ne sert qu'une fois. Si tu en as demandé plusieurs, seul le dernier e-mail fonctionne."
+    },
+    "helpLine": "Nouveau ici ? Comment ça marche : {url}",
+    "helpLinkText": "Nouveau ici ? Comment ça marche",
+    "quota": {
+      "subject": "Tes notes sont en attente",
+      "intro": "Tu as atteint la limite d'utilisation de l'IA prévue pendant la bêta.",
+      "day": "La limite du jour est atteinte : les notes reçues sont gardées et seront traitées dès que possible, en général d'ici demain.",
+      "month": "La limite du mois est atteinte : les notes reçues sont gardées et seront traitées quand la limite sera relevée ou renouvelée.",
+      "reassure": "Rien n'est perdu. Tu n'as rien à renvoyer."
+    },
+    "reminder": {
+      "subject": "{count, plural, =0 {Des cartes à valider t'attendent} one {# carte à réviser aujourd'hui} other {# cartes à réviser aujourd'hui}}",
+      "intro": "C'est l'heure de ta révision {brand}.",
+      "due": "{count, plural, =0 {Rien à réviser} one {# carte à réviser aujourd'hui} other {# cartes à réviser aujourd'hui}}",
+      "minutes": "Environ {minutes} min.",
+      "tray": "{count, plural, =0 {Aucune carte à valider.} one {# carte à valider t'attend.} other {# cartes à valider t'attendent.}}",
+      "link": "Ouvre ta session (lien valable 24 h) : {url}",
+      "cta": "Commencer la révision",
+      "footer": "Mettre en pause ou arrêter ces rappels : {url}",
+      "footerLink": "Mettre en pause ou arrêter les rappels"
+    },
+    "waitlist": {
+      "subject": "Confirme ton adresse pour {brand}",
+      "kicker": "Liste d'attente",
+      "title": "Confirme ton adresse",
+      "intro": "Cette adresse a été saisie sur {brand} pour être prévenue de son ouverture à tous. Pour être sur la liste, confirme avec le bouton ci-dessous.",
+      "cta": "Confirmer mon adresse",
+      "ctaText": "Confirmer mon adresse : {url}",
+      "validity": "Le lien est valable {days} jours.",
+      "notYou": "Ce n'est pas toi ? Ignore ce message : ton adresse n'est pas enregistrée et tu ne recevras rien d'autre.",
+      "leaveLine": "Si tu confirmes puis changes d'avis : {url}",
+      "leaveLinkText": "Me retirer de la liste",
+      "footer": "Bêta — tu reçois ce message parce que cette adresse a été saisie sur {brand}."
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "tray": "À valider",
+    "review": "Réviser",
+    "pages": "Fiches",
+    "label": "Navigation principale",
+    "settings": "Paramètres"
+  },
+  "tray": {
+    "title": "Cartes à valider",
+    "empty": "Envoie une note par e-mail pour en proposer.",
+    "keep": "Garder",
+    "discard": "Supprimer",
+    "keepAll": "Tout garder",
+    "discardAll": "Tout supprimer",
+    "answer": "Réponse",
+    "untitled": "(sans titre)",
+    "kept": "{count, plural, one {# carte gardée} other {# cartes gardées}}",
+    "badgeModel": "Ajouté par l'IA, non vérifié",
+    "lede": "Garde celles qui valent la peine d'être retenues.",
+    "emptyTitle": "Aucune carte à valider.",
+    "source": "Source",
+    "confirmTitle": "Supprimer ces cartes ?",
+    "confirmBody": "Les {count, plural, one {# carte à valider} other {# cartes à valider}} de cette source seront supprimées. Cette action est définitive.",
+    "confirmCancel": "Annuler",
+    "kind": {
+      "email_body": "Mail",
+      "user_note": "Note",
+      "url": "Lien",
+      "file": "Fichier"
+    },
+    "sourceMeta": "Source · {kind} · {date}"
+  },
+  "review": {
+    "title": "Révision",
+    "show": "Afficher la réponse",
+    "again": "À revoir",
+    "againHint": "Oublié",
+    "hard": "Difficile",
+    "hardHint": "Retrouvé, avec effort",
+    "good": "Correct",
+    "goodHint": "Retrouvé",
+    "easy": "Facile",
+    "easyHint": "Retrouvé tout de suite",
+    "newBadge": "Nouvelle",
+    "done": "C'est fini pour aujourd'hui. À demain !",
+    "budgetReached": "Tu as atteint ton temps de révision du jour.",
+    "continueAnyway": "Continuer quand même",
+    "stop": "Arrêter",
+    "recall": "Pour rappel : {claim}",
+    "excerpt": "Extrait de la source",
+    "openPage": "Ouvrir la fiche",
+    "next": "Suivant",
+    "forgotNote": "Oublié ? Choisis toujours « {again} », jamais « {hard} ».",
+    "badgeModel": "Ajouté par l'IA, non vérifié",
+    "answer": "Réponse",
+    "recallNote": "à relire",
+    "edit": "Modifier",
+    "suspend": "Ne plus me la poser",
+    "editTitle": "Modifier la carte",
+    "editQuestion": "Question",
+    "editAnswer": "Réponse",
+    "editHint": "Pour corriger la formulation. Ton historique de révisions est conservé. Si le fait change, suspends cette carte et crée-en une nouvelle depuis la fiche.",
+    "editSave": "Enregistrer",
+    "editCancel": "Annuler",
+    "editError": "La question et la réponse doivent faire entre 1 et 1000 caractères.",
+    "progress": "{n} / {total}"
+  },
+  "pages": {
+    "title": "Fiches",
+    "empty": "Aucune fiche pour l'instant.",
+    "claims": "Faits",
+    "summary": "Résumé",
+    "source": "Source",
+    "sources": "Sources",
+    "related": "Fiches liées",
+    "openQuestions": "Questions ouvertes",
+    "remove": "retirer",
+    "removeLinkTo": "Retirer le lien vers {title}",
+    "resolve": "marquer résolue",
+    "back": "Retour aux fiches",
+    "badgeModel": "Ajouté par l'IA, non vérifié",
+    "count": "{count, plural, one {# fiche} other {# fiches}}",
+    "emptyHint": "Chaque note envoyée par e-mail crée ou enrichit une fiche.",
+    "excerpts": "Extraits des sources",
+    "noteRef": "Extrait {n}",
+    "noteBack": "Retour au fait {n}",
+    "kind": {
+      "email_body": "Mail",
+      "user_note": "Note",
+      "url": "Lien",
+      "file": "Fichier"
+    },
+    "sourceMeta": "({kind} · {date})"
+  },
+  "style": {
+    "label": "Style :",
+    "revue": "revue",
+    "calme": "calme",
+    "recre": "récré",
+    "signal": "signal"
+  },
+  "settings": {
+    "reminders": {
+      "label": "Rappels par e-mail",
+      "on": "Actifs",
+      "week": "En pause une semaine",
+      "month": "En pause un mois",
+      "off": "Arrêtés"
+    },
+    "title": "Paramètres",
+    "saved": "Paramètres enregistrés.",
+    "save": "Enregistrer",
+    "dailyMinutes": "Temps de révision par jour",
+    "minutesOption": "{minutes} min",
+    "studyDays": "Jours de révision",
+    "maxNewCards": "Nouvelles cartes par jour (maximum)",
+    "desiredRetention": "Rétention visée",
+    "retentionHint": "Entre {min} et {max}. Plus la valeur est haute, plus tu auras de révisions.",
+    "timezone": "Fuseau horaire",
+    "timezoneHint": "Nom IANA, par exemple Europe/Paris. Il fixe le début de ta journée et l'heure du rappel.",
+    "language": "Langue",
+    "languageFr": "Français",
+    "languageEn": "English",
+    "weekday": {
+      "0": "Dim",
+      "1": "Lun",
+      "2": "Mar",
+      "3": "Mer",
+      "4": "Jeu",
+      "5": "Ven",
+      "6": "Sam"
+    },
+    "errors": {
+      "daily_minutes": "Choisis 3, 6, 10, 15 ou 20 minutes.",
+      "study_days": "Choisis au moins un jour de révision.",
+      "max_new_cards": "Les nouvelles cartes par jour doivent être un entier de 0 à 20.",
+      "desired_retention": "La rétention visée doit être entre 0,80 et 0,95.",
+      "timezone": "Fuseau horaire inconnu.",
+      "language": "Langue inconnue.",
+      "reminders": "Choix de rappels inconnu."
+    },
+    "advanced": "Paramètres avancés",
+    "groups": {
+      "review": "Révisions",
+      "appearance": "Apparence",
+      "help": "Aide",
+      "account": "Compte"
+    }
+  },
+  "welcome": {
+    "title1": "Pour commencer",
+    "title2": "Envoyer une note",
+    "title3": "Valider les cartes",
+    "title4": "Les révisions et le rappel",
+    "title5": "À toi d'essayer",
+    "progress": "Étape {step} sur {total}",
+    "back": "Retour",
+    "next": "Suivant",
+    "skip": "Passer la visite",
+    "finish": "Terminer",
+    "navLabel": "Visite guidée",
+    "replay": "Revoir la visite guidée"
+  },
+  "inbox": {
+    "title": "Mails reçus",
+    "lede": "Les derniers mails que tu as envoyés, et ce qu’il en est advenu. Plus de reçu par e-mail : seuls les échecs sont signalés.",
+    "empty": "Aucun mail reçu pour l’instant.",
+    "untitled": "(sans titre)",
+    "status": {
+      "received": "Reçu",
+      "processing": "En cours",
+      "done": "Traité",
+      "failed": "Échec",
+      "duplicate": "Déjà dans ta base"
+    },
+    "partial": "lecture partielle",
+    "ignored": "éléments ignorés",
+    "shortfall": "{requested, plural, one {# demandée} other {# demandées}}, {kept, plural, =0 {aucune créée} one {# créée} other {# créées}}{reasons}",
+    "shortfallReasons": " : {list}",
+    "dropped": {
+      "empty": "{n, plural, one {# carte vide} other {# cartes vides}}",
+      "too_long": "{n, plural, one {# carte trop longue} other {# cartes trop longues}}",
+      "no_question_mark": "{n, plural, one {# sans point d’interrogation} other {# sans point d’interrogation}}",
+      "yes_no": "{n, plural, one {# question oui/non} other {# questions oui/non}}",
+      "context_reference": "{n, plural, one {# dépendante du contexte} other {# dépendantes du contexte}}",
+      "about_the_author": "{n, plural, one {# sur l’auteur} other {# sur l’auteur}}",
+      "duplicate": "{n, plural, one {# doublon} other {# doublons}}",
+      "over_cap": "{n, plural, one {# en trop} other {# en trop}}",
+      "invalid_claim": "{n, plural, one {# sans fait associé} other {# sans fait associé}}",
+      "not_enough_facts": "{n, plural, one {# pas assez de faits} other {# pas assez de faits}}"
+    }
+  }
+}

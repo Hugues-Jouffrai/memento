@@ -1,0 +1,23 @@
+# Sources are processed in this order, as if they arrived by mail one after the other.
+# kind: "rich" is a long source (claims quoted from it); "note" is a sparse personal note (enriched by the model).
+# clusters: the sources that must end on the same page. Every source not listed is expected to get a page of its own.
+sources:
+  - { id: fsrs-anki, file: ../fixtures/en-cluster-fsrs-anki/input.md, kind: rich }
+  - { id: bitter-lesson, file: ../fixtures/en-article-bitter-lesson/input.md, kind: rich }
+  - { id: cicero, file: ../enrich-fixtures/fr-cicero-citoyennete/input.md, kind: note }
+  - { id: fsrs-osr, file: ../fixtures/en-cluster-fsrs-osr/input.md, kind: rich }
+  - { id: incas, file: ../enrich-fixtures/fr-incas/input.md, kind: note }
+  - { id: cognitive-load, file: ../fixtures/en-wiki-cognitive-load/input.md, kind: rich }
+  - { id: fsrs-remnote, file: ../fixtures/en-cluster-fsrs-remnote/input.md, kind: rich }
+  - { id: teotihuacan-fr, file: ../enrich-fixtures/fr-teotihuacan/input.md, kind: note }
+  - { id: warhol, file: ../enrich-fixtures/fr-warhol/input.md, kind: note }
+  - { id: fsrs-fr-note, file: fr-fsrs-note/input.md, kind: note }
+  - { id: llama, file: ../fixtures/en-article-llama-3-2/input.md, kind: rich }
+  - { id: leclerc, file: ../enrich-fixtures/fr-leclerc/input.md, kind: note }
+  - { id: teotihuacan-en, file: en-teotihuacan-note/input.md, kind: note }
+# The M0 fixtures tag the Anki deck-options manual as part of an "fsrs" cluster. Read in full, FSRS is one section (about
+# 15 headings: presets, limits, learning steps, ..., FSRS), so the manual is a different subject from the algorithm itself.
+# Kept apart here: confirmed by Hugues and an independent Opus review (D43).
+clusters:
+  - [fsrs-osr, fsrs-remnote, fsrs-fr-note]
+  - [teotihuacan-fr, teotihuacan-en]

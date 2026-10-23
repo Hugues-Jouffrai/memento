@@ -1,0 +1,9 @@
+# SYNTHETIC fixture written by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: fr
+kind: sparse_note
+note: Sparse note. Outside facts (Paris 1944, Koufra...) must not be added at this stage.
+must_cover:
+  - { id: division, any: ["2e DB", "division blindée"] }
+  - { id: africa, any: ["Afrique"] }
+forbidden: ["1944", "Koufra", "Paris"]

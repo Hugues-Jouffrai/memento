@@ -1,0 +1,14 @@
+# Generated with known content by scripts/make-eval-file-fixtures.ts (no review needed).
+language: en
+route: text-layer
+must_transcribe:
+  - { id: year_found, any: ["1799"] }
+  - { id: place, any: ["Rashid"] }
+  - { id: demotic, any: ["Demotic"] }
+  - { id: champollion, any: ["Champollion"] }
+must_cover:
+  - { id: found_1799, any: ["1799"] }
+  - { id: three_scripts, any: ["Demotic"] }
+  - { id: champollion, any: ["Champollion"] }
+  - { id: british_museum, any: ["British Museum"] }
+  - { id: ptolemy, any: ["Ptolemy"] }

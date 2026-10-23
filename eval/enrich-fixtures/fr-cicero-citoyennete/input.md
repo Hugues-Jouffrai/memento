@@ -1,0 +1,1 @@
+J'ai appris comment la citoyenneté romaine a peu à peu été étendue aux citoyens d'autres villes ce qui a permis à cicéron l'arpinate de faire de la politique à Rome par exemple. Période intéressante et complexe. J'ai aussi découvert que Cicéron a participer à apporter la philosophie grecque à Rome, ce qui était un peu considéré comme quelque chose de décadent

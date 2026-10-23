@@ -1,0 +1,10 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: article
+must_cover:
+  - { id: core-claim, any: ["general methods", "leverage computation", "leveraging computation"] }
+  - { id: moore, any: ["Moore's law", "falling cost per unit of computation"] }
+  - { id: chess, any: ["Kasparov", "chess"] }
+  - { id: search-learning, any: ["search and learning", "search", "learning"] }
+forbidden: []

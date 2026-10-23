@@ -1,0 +1,9 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: links
+note: Only URLs and a few titles. The model must not invent what the pages say.
+must_cover:
+  - { id: bitter-lesson, any: ["bitter lesson", "Sutton"] }
+  - { id: llama, any: ["Llama", "Meta"] }
+forbidden: ["Kasparov", "Moore"]

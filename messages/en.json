@@ -1,0 +1,573 @@
+{
+  "app": {
+    "name": "{brand}",
+    "tagline": "Email a note, remember it for good."
+  },
+  "home": {
+    "title": "Today",
+    "dueToday": "{count, plural, =0 {Nothing to review today} one {# card to review today} other {# cards to review today}}",
+    "newToday": "{count, plural, =0 {} one {including # new} other {including # new}}",
+    "minutes": "About {minutes} min",
+    "trayCount": "{count, plural, =0 {Tray is empty} one {# card waiting in the tray} other {# cards waiting in the tray}}",
+    "startReview": "Start review",
+    "openTray": "Open the tray",
+    "next7": "Next 7 days",
+    "captureAddress": "Send your notes to this address",
+    "captureHint": "From your account's email address only.",
+    "captureFallback": "Other address (if your provider blocks the one above)",
+    "today": "Today",
+    "dueLabel": "{count, plural, =0 {nothing to review today} one {card to review today} other {cards to review today}}",
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "login": {
+    "title": "Sign in",
+    "emailLabel": "Your email address",
+    "sendCode": "Get a code",
+    "codeSent": "If your address is known, an email with a 6-digit code was just sent. It is valid for 15 minutes, and only the code in the latest email works.",
+    "codeLabel": "6-digit code",
+    "verify": "Sign in",
+    "error": {
+      "invalid_email": "Invalid email address.",
+      "invalid_code": "The code must have 6 digits.",
+      "bad_code": "Wrong or expired code. Only the code in the latest email works: request a new one.",
+      "rate_limited": "Too many requests. Try again in {seconds, plural, one {# second} other {# seconds}}.",
+      "link": "This link was already used or has expired. Request a new code, then type it here."
+    },
+    "newCode": "Get a new code",
+    "newCodeWait": "New code available in {seconds, plural, one {# second} other {# seconds}}",
+    "noAddress": "Type your address and the code from the latest email."
+  },
+  "help": {
+    "title": "How it works",
+    "intro": "You email a note: it becomes a topic and proposed cards. You validate the cards, then review a little every day.",
+    "send": {
+      "title": "Send",
+      "address": "Your sending address is {address}. Write from your account address ({accountEmail}), otherwise the message is refused.",
+      "what": "You can send a few words, a link, a PDF or a photo, up to {maxItems} sources per email. A file can weigh up to {maxFileMb} MB, a photo up to {maxPhotoMb} MB.",
+      "receipt": "Proposed cards arrive in the tray, with the list of your received mails at the bottom. If processing fails, an email tells you why and what to do.",
+      "try": "Try it now",
+      "tryHint": "This opens your mail app with a sample note, which you can edit before sending. The cards arrive in the tray within a few minutes."
+    },
+    "tray": {
+      "title": "{tray}",
+      "keep": "Proposed cards wait in \"{tray}\". Nothing enters your reviews unless you keep it: \"{keep}\", \"{discard}\" or \"{keepAll}\".",
+      "badge": "The \"{badgeModel}\" badge means the card comes from the AI's own knowledge, not from your source."
+    },
+    "review": {
+      "title": "{review}",
+      "grades": "\"{show}\", then grade yourself with four buttons: \"{again}\", \"{hard}\", \"{good}\", \"{easy}\".",
+      "forgot": "If you forgot, always pick \"{again}\", never \"{hard}\".",
+      "budget": "Your daily review time is {budget} min (choices: {presets}). When the day is full, new cards wait. Once the time is up, you can choose \"{continueAnyway}\".",
+      "edit": "\"{edit}\" fixes the wording of a card; \"{suspend}\" takes it out of your reviews."
+    },
+    "reminder": {
+      "title": "The reminder",
+      "when": "A reminder goes out at {reminderTime} on study days, only when there is something to do.",
+      "link": "Its link opens the session without signing in for {tokenHours} h. It can only review: no editing, no topics, no \"{settings}\".",
+      "pause": "You can pause or stop the reminder from the email or from \"{settings}\"."
+    },
+    "pages": {
+      "title": "{pages} / {settings}",
+      "pages": "Every send creates or enriches a topic, with its sources; find them in \"{pages}\".",
+      "settings": "In \"{settings}\", you set your review time, your days, how many new cards, the target retention, the time zone, the language, the style, the reminders and your data."
+    }
+  },
+  "onboarding": {
+    "title": "First steps",
+    "step": {
+      "capture": "Send a first note to your address",
+      "keep": "Keep a first proposed card",
+      "review": "Do a first review"
+    },
+    "done": "done",
+    "todo": "to do",
+    "hide": "Hide",
+    "hideHint": "You can find help again in \"{settings}\".",
+    "help": "How it works",
+    "sampleSubject": "My first note",
+    "sampleBody": "This weekend I learned that bees communicate by dancing. I want to remember how they show the direction of the nectar.",
+    "tryNow": "Try it now",
+    "helpLink": "How it works"
+  },
+  "account": {
+    "exportTitle": "My data",
+    "export": "Download my data",
+    "exportHint": "One zip file: your topics as Markdown, your sources, cards and reviews as CSV.",
+    "delete": "Delete my account",
+    "deleteTitle": "Delete my account",
+    "deleteWarning": "This is immediate and permanent: your account, topics, sources, cards, reviews and original files are erased. There is no undo.",
+    "exportFirst": "Download my data first",
+    "typeEmail": "To confirm, type your email address",
+    "mismatch": "This address does not match your account.",
+    "deleteConfirm": "Delete permanently",
+    "cancel": "Cancel",
+    "deleted": "Your account and all your data were deleted.",
+    "privacyLink": "Privacy",
+    "signedIn": "Signed in: {email}",
+    "signOut": "Sign out"
+  },
+  "about": {
+    "title": "Why it works",
+    "lede": "{brand} rests on a few research findings about memory, and on a few product choices. This page says which, where they come from, and where the evidence stops.",
+    "roles": {
+      "theory": "The theory",
+      "algorithm": "The algorithm",
+      "memento": "In {brand}"
+    },
+    "sections": {
+      "forgetting": {
+        "title": "Forgetting is normal",
+        "theory": "We forget what we have just learned quickly, then more and more slowly. Researchers call this the forgetting curve. Each time we successfully recall something, it fades more slowly.",
+        "memento": "So each card comes back after an interval that grows each time you recall it."
+      },
+      "testing": {
+        "title": "Testing yourself beats rereading",
+        "theory": "Searching your memory for the answer helps you retain more than rereading the lesson or highlighting. In a review of the literature on ten study techniques, self-testing is among the two techniques rated most useful.",
+        "memento": "{brand} shows you the question first and lets you answer from memory before revealing the answer."
+      },
+      "spacing": {
+        "title": "Spacing out your reviews",
+        "theory": "Reviewing in several sittings, with breaks, helps you retain more than going over everything at once. The authors of the same review also place spacing among the two most useful techniques. The ideal gap depends on how long you want to remember: the further away the target date, the more the reviews can be spaced out.",
+        "memento": "Each successful answer lengthens the gap before the card's next review."
+      },
+      "fsrs": {
+        "title": "How {brand} picks the next date",
+        "algorithm": "{brand} uses a free, public algorithm, FSRS. For each card it tracks three things: its difficulty, the strength of the memory and the probability of remembering it today.",
+        "memento": "When you grade an answer ({again}, {hard}, {good}, {easy}), it recalculates the next date so that your chance of remembering stays close to the level you chose in the settings. The default is {retention}%."
+      },
+      "cards": {
+        "title": "Why cards go through you",
+        "memento": "The AI reads what you send and proposes cards; it adds none to your reviews without your approval. Facts taken from your source quote their excerpt; what the AI adds from its own knowledge is flagged as unverified. This is not a research result."
+      },
+      "budget": {
+        "title": "A few minutes, every day",
+        "memento": "{brand} limits the review time you set per day: when the day is full, new cards wait. This is not a research result: it is so the pace stays sustainable."
+      }
+    },
+    "source": "Source:",
+    "limitsTitle": "Limits",
+    "limits": "These results come from laboratory and classroom studies, mostly on word lists and courses; they guarantee nothing for any one person. FSRS is a model of memory, not a measurement of yours. Cards written by an AI can be wrong: reread them before keeping them.",
+    "sourcesTitle": "Sources",
+    "helpLink": "Why it works: the theory and the sources"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lede": "{brand} is in beta, built by one person. Here is what is kept, by whom, and how to erase everything.",
+    "storeTitle": "What is kept",
+    "store": "The emails you send (text, links, attachments), the text read from links and files, the topics and cards made from them, your review history, your settings and your email address. Nothing else: no advertising, no resale, no tracking.",
+    "processorsTitle": "Who handles your data",
+    "processors": {
+      "gemini": {
+        "name": "Google (Gemini API)",
+        "role": "reads your content to extract facts and cards, and to compare it with your topics."
+      },
+      "supabase": {
+        "name": "Supabase",
+        "role": "database and files, hosted in the eu-west-3 region (Paris)."
+      },
+      "resend": {
+        "name": "Resend",
+        "role": "sending and receiving email (processing failures, reminders, sign-in codes, waiting-list confirmation)."
+      },
+      "vercel": {
+        "name": "Vercel",
+        "role": "hosting of the app."
+      },
+      "cloudflare": {
+        "name": "Cloudflare",
+        "role": "domain name management only; the content of your emails does not go through it."
+      }
+    },
+    "noTrainTitle": "Model training",
+    "noTrain": "AI calls use Google's paid offer, whose terms say content is not used to improve its products.",
+    "yourRightsTitle": "Your rights",
+    "yourRights": "In Settings you can download all your data and delete your account. Deletion is immediate: the account, topics, cards, history and original files are erased. Only cost lines remain, with no content and no identity.",
+    "waitlistTitle": "Waiting list",
+    "waitlist": "If you leave your address on the home page to be told when it opens, a confirmation email is sent and nothing is stored until you click its button. Once you confirm, only your address, the language of the page and the date of confirmation are kept. The address is used only to send you one email on the day it opens: no other mail, no sharing, no tracking. It is erased at the latest {months} months after you confirmed.",
+    "waitlistRemove": "To remove it sooner, use the “{leaveLink}” link in the confirmation email. Lost it? Enter your address again on the home page: the new email has that link too.",
+    "waitlistAbuse": "To limit abuse, a fingerprint (hash) of the email address and of the network (IP) address of each request is kept for at most two days.",
+    "contactTitle": "Contact",
+    "contact": "For any question, ask the person who invited you."
+  },
+  "landing": {
+    "metaDescription": "Email a link, a PDF, a photo or two lines: {brand} turns it into cards and has you review them a little every day. Closed beta.",
+    "hook": "You email a link, a PDF, a photo or two lines to one address. {brand} turns it into cards worth remembering and has you review them a little every day.",
+    "notify": {
+      "title": "Hear when it opens",
+      "lede": "The beta is closed, by invitation only. Leave your address: once you confirm it, you will get one email, on the day {brand} opens to everyone.",
+      "submit": "Notify me",
+      "consent": "Your address is used only to tell you when it opens. Nothing else, and you can remove it whenever you want. <link>What is kept</link>",
+      "honeypot": "Leave this field empty",
+      "status": {
+        "sent": "Almost done: a confirmation email is on its way. Click its button to be on the list. Nothing yet? Check your spam folder.",
+        "invalid": "Invalid email address.",
+        "limited": "Too many requests right now. Try again later.",
+        "failed": "The email could not be sent. Try again in a moment."
+      }
+    },
+    "already": "I already have an account",
+    "steps": {
+      "title": "Three steps",
+      "send": {
+        "title": "You send",
+        "text": "Write to your {brand} address from your usual mail app: a few words about a visit, a link to an article, a PDF, a photo of a museum panel. Proposed cards arrive in the tray; if something fails, an email explains it."
+      },
+      "sort": {
+        "title": "You validate",
+        "text": "{brand} files what you send into topics by subject and proposes a few question-and-answer cards. You keep the ones worth it and drop the rest."
+      },
+      "review": {
+        "title": "You review",
+        "text": "A few minutes a day, cards come back when it is time to see them again. You say whether you remembered, and the schedule adjusts."
+      }
+    },
+    "diff": {
+      "title": "What is different",
+      "choose": "You choose what enters your reviews: no card gets there without your say.",
+      "sources": "Every fact cites its source. Anything the AI adds from its own knowledge is marked as such.",
+      "reminder": "One email reminder at the time you choose, only on days when there is something to do.",
+      "budget": "A daily review time you set: when the day is full, new cards wait."
+    },
+    "beta": {
+      "title": "A beta, built by one person",
+      "text": "{brand} is in closed beta, built by one person. No advertising, no resale, no tracking. Things will still change.",
+      "privacyLink": "What is kept and how to erase it"
+    }
+  },
+  "waitlist": {
+    "confirm": {
+      "title": "Confirm your address",
+      "question": "Add {email} to the list of people told when {brand} opens to everyone?",
+      "button": "Confirm",
+      "done": "Done. You will get one email, on the day it opens."
+    },
+    "leave": {
+      "title": "Leave the list",
+      "question": "Remove {email} from the {brand} waiting list?",
+      "button": "Remove me",
+      "done": "Done: this address is not on the list."
+    },
+    "leaveLink": "Remove me from the list",
+    "invalid": "This link is not valid or has expired. You can leave your address again on the home page: the new email has a fresh link.",
+    "failed": "Something went wrong. Try again in a moment.",
+    "home": "Back to the home page"
+  },
+  "unsubscribe": {
+    "title": "Email reminders",
+    "invalid": "This link is not valid. Use the link in a recent reminder, or the app's Settings.",
+    "state": {
+      "on": "Reminders are on.",
+      "week": "Reminders are paused for a week.",
+      "month": "Reminders are paused for a month.",
+      "off": "Reminders are off."
+    },
+    "choice": {
+      "week": "Pause for a week",
+      "month": "Pause for a month",
+      "off": "Stop reminders",
+      "on": "Resume reminders"
+    },
+    "done": {
+      "week": "Done: no reminders for a week.",
+      "month": "Done: no reminders for a month.",
+      "off": "Done: you will not get reminders any more. You are still told when a note fails.",
+      "on": "Done: reminders are back."
+    }
+  },
+  "join": {
+    "title": "Join the beta",
+    "lede": "You received an invitation. Enter your email address and we will send you a code to sign in.",
+    "emailLabel": "Your email address",
+    "submit": "Get my code",
+    "already": "Already have an account? Do not use this page: go to the sign-in page, it is faster and avoids hitting the request limit.",
+    "loginLink": "Go to the sign-in page",
+    "error": {
+      "invalid_email": "Invalid email address.",
+      "invalid_invite": "This invitation is no longer valid. Ask the person who sent it for a new one.",
+      "rate_limited": "Too many requests. Try again in a moment. If you already have an account, use the sign-in page.",
+      "failed": "Something went wrong. Try again in a moment."
+    }
+  },
+  "email": {
+    "receipt": {
+      "doneSubject": "Received: {title}",
+      "doneIntro": "I read your note \"{title}\".",
+      "summaryTitle": "What I kept",
+      "pageLine": "Topic created: {title}.",
+      "pageUpdatedLine": "Topic updated: {title}.",
+      "cardsLine": "{count, plural, =0 {No cards proposed.} one {# card proposed.} other {# cards proposed.}}",
+      "trayCta": "Pick my cards",
+      "trayLink": "Pick your cards in the tray: {url}",
+      "groupSubject": "Receipt: {title} ({count} sources)",
+      "groupIntro": "I read the {count} items of your mail \"{title}\".",
+      "groupDone": "{title}: topic \"{page}\", {count, plural, =0 {no cards proposed} one {# card proposed} other {# cards proposed}}.",
+      "groupDuplicate": "{title}: already in your knowledge base, nothing added.",
+      "groupFailed": "{title}: not processed.",
+      "failedSubject": "I could not process your note",
+      "failedIntro": "Your note \"{title}\" could not be processed.",
+      "untitled": "(untitled)",
+      "reason": {
+        "too_short": "It is too short for me to get anything out of it. Add a few sentences, or forward the article itself.",
+        "no_claims": "I could not extract reliable facts from it. Try pasting the text directly into the email.",
+        "fetch_error": "I could not read the content of the email. Send it again in a few minutes.",
+        "ai_error": "My analysis failed after several tries. Send the note again in a few minutes.",
+        "unknown": "An unexpected error occurred. Send the note again in a few minutes.",
+        "paywall": "The page is for subscribers only or asks you to sign in. Copy the article's text into a new email.",
+        "empty_page": "I found almost no text on that page (it may load through scripts). Copy the article's text into a new email.",
+        "url_blocked": "I cannot open this link (address not allowed). Copy the page's text into a new email.",
+        "page_error": "The page could not be loaded (it no longer exists or refuses access). Check the link or copy the text into a new email.",
+        "unsupported_link": "This link does not lead to a readable web page (a file or document). Send the file as an attachment.",
+        "file_too_large": "The file is too large (25 MB maximum, 15 MB for a scanned document or an image). Send a lighter version.",
+        "unsupported_file": "I only read PDFs and images (photos, screenshots). Send the content in one of those formats or paste the text into the email.",
+        "unreadable_file": "I could not read anything in this file (password-protected, damaged or empty). Try another version or paste the text into the email."
+      },
+      "truncated": "The page is long: I only read the beginning.",
+      "ignoredLinks": "Links not processed (beyond {max} sources per mail):",
+      "ignoredFiles": "Attachments ignored (unsupported formats or beyond {max} sources per mail):"
+    },
+    "duplicateSubject": "Already in your base: {title}",
+    "duplicateIntro": "This note is already in your knowledge base, so I added nothing new.",
+    "footer": "Beta — you get this message because you have an account.",
+    "reminderLinkNote": "This link opens your review session without signing in for 24 hours.",
+    "kicker": {
+      "receipt": "Receipt",
+      "failed": "Failed",
+      "reminder": "Reminder",
+      "quota": "On hold",
+      "signin": "Sign-in"
+    },
+    "signin": {
+      "title": "Your access to {brand}",
+      "intro": "Type this code on the {brand} sign-in page.",
+      "cta": "Open the sign-in page",
+      "validity": "The code is valid for 15 minutes and works once. If you requested several, only the latest email works."
+    },
+    "helpLine": "New here? How it works: {url}",
+    "helpLinkText": "New here? How it works",
+    "quota": {
+      "subject": "Your notes are waiting",
+      "intro": "You have reached the AI usage limit set for the beta.",
+      "day": "Today's limit is reached: the notes you send are kept and will be processed as soon as possible, usually by tomorrow.",
+      "month": "This month's limit is reached: the notes you send are kept and will be processed when the limit is raised or renewed.",
+      "reassure": "Nothing is lost. You do not need to send anything again."
+    },
+    "reminder": {
+      "subject": "{count, plural, =0 {Cards are waiting in your tray} one {# card to review today} other {# cards to review today}}",
+      "intro": "It's time for your {brand} review.",
+      "due": "{count, plural, =0 {Nothing to review} one {# card to review today} other {# cards to review today}}",
+      "minutes": "About {minutes} min.",
+      "tray": "{count, plural, =0 {Tray is empty.} one {# card is waiting in your tray.} other {# cards are waiting in your tray.}}",
+      "link": "Open your session (link valid for 24 h): {url}",
+      "cta": "Start review",
+      "footer": "Pause or stop these reminders: {url}",
+      "footerLink": "Pause or stop reminders"
+    },
+    "waitlist": {
+      "subject": "Confirm your address for {brand}",
+      "kicker": "Waiting list",
+      "title": "Confirm your address",
+      "intro": "This address was entered on {brand} to be told when it opens to everyone. To be on the list, confirm with the button below.",
+      "cta": "Confirm my address",
+      "ctaText": "Confirm my address: {url}",
+      "validity": "The link is valid for {days} days.",
+      "notYou": "Not you? Ignore this email: your address is not stored and you will get nothing else.",
+      "leaveLine": "If you confirm and change your mind later: {url}",
+      "leaveLinkText": "Remove me from the list",
+      "footer": "Beta — you get this message because this address was entered on {brand}."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "tray": "Tray",
+    "review": "Review",
+    "pages": "Topics",
+    "label": "Main navigation",
+    "settings": "Settings"
+  },
+  "tray": {
+    "title": "Card tray",
+    "empty": "Email a note to get some proposed.",
+    "keep": "Keep",
+    "discard": "Discard",
+    "keepAll": "Keep all",
+    "discardAll": "Discard all",
+    "answer": "Answer",
+    "untitled": "(untitled)",
+    "kept": "{count, plural, one {# card kept} other {# cards kept}}",
+    "badgeModel": "Added by AI, unverified",
+    "lede": "Keep the ones worth remembering.",
+    "emptyTitle": "No cards waiting.",
+    "source": "Source",
+    "confirmTitle": "Delete these cards?",
+    "confirmBody": "The {count, plural, one {# card} other {# cards}} waiting for validation from this source will be deleted. This cannot be undone.",
+    "confirmCancel": "Cancel",
+    "kind": {
+      "email_body": "Email",
+      "user_note": "Note",
+      "url": "Link",
+      "file": "File"
+    },
+    "sourceMeta": "Source · {kind} · {date}"
+  },
+  "review": {
+    "title": "Review",
+    "show": "Show answer",
+    "again": "Again",
+    "againHint": "Forgot",
+    "hard": "Hard",
+    "hardHint": "Recalled, with effort",
+    "good": "Good",
+    "goodHint": "Recalled",
+    "easy": "Easy",
+    "easyHint": "Recalled instantly",
+    "newBadge": "New",
+    "done": "That's it for today. See you tomorrow!",
+    "budgetReached": "You reached today's review time.",
+    "continueAnyway": "Continue anyway",
+    "stop": "Stop",
+    "recall": "As a reminder: {claim}",
+    "excerpt": "Excerpt from the source",
+    "openPage": "Open the topic",
+    "next": "Next",
+    "forgotNote": "Forgot it? Always pick \"{again}\", never \"{hard}\".",
+    "badgeModel": "Added by AI, unverified",
+    "answer": "Answer",
+    "recallNote": "read again",
+    "edit": "Edit",
+    "suspend": "Stop asking this",
+    "editTitle": "Edit card",
+    "editQuestion": "Question",
+    "editAnswer": "Answer",
+    "editHint": "For fixing the wording. Your review history is kept. If the fact itself changes, suspend this card and create a new one from the topic.",
+    "editSave": "Save",
+    "editCancel": "Cancel",
+    "editError": "Question and answer must be 1 to 1000 characters.",
+    "progress": "{n} / {total}"
+  },
+  "pages": {
+    "title": "Topics",
+    "empty": "No topics yet.",
+    "claims": "Facts",
+    "summary": "Summary",
+    "source": "Source",
+    "sources": "Sources",
+    "related": "Related topics",
+    "openQuestions": "Open questions",
+    "remove": "remove",
+    "removeLinkTo": "Remove the link to {title}",
+    "resolve": "mark resolved",
+    "back": "Back to topics",
+    "badgeModel": "Added by AI, unverified",
+    "count": "{count, plural, one {# topic} other {# topics}}",
+    "emptyHint": "Each note you email creates or extends a topic.",
+    "excerpts": "Source excerpts",
+    "noteRef": "Excerpt {n}",
+    "noteBack": "Back to fact {n}",
+    "kind": {
+      "email_body": "Email",
+      "user_note": "Note",
+      "url": "Link",
+      "file": "File"
+    },
+    "sourceMeta": "({kind} · {date})"
+  },
+  "style": {
+    "label": "Style:",
+    "revue": "editorial",
+    "calme": "calm",
+    "recre": "playground",
+    "signal": "signal"
+  },
+  "settings": {
+    "reminders": {
+      "label": "Email reminders",
+      "on": "On",
+      "week": "Paused for a week",
+      "month": "Paused for a month",
+      "off": "Off"
+    },
+    "title": "Settings",
+    "saved": "Settings saved.",
+    "save": "Save",
+    "dailyMinutes": "Review time per day",
+    "minutesOption": "{minutes} min",
+    "studyDays": "Study days",
+    "maxNewCards": "New cards per day (maximum)",
+    "desiredRetention": "Desired retention",
+    "retentionHint": "Between {min} and {max}. A higher value means more reviews.",
+    "timezone": "Time zone",
+    "timezoneHint": "IANA name, for example Europe/Paris. It sets when your day starts and when the reminder goes out.",
+    "language": "Language",
+    "languageFr": "Français",
+    "languageEn": "English",
+    "weekday": {
+      "0": "Sun",
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat"
+    },
+    "errors": {
+      "daily_minutes": "Choose 3, 6, 10, 15 or 20 minutes.",
+      "study_days": "Choose at least one study day.",
+      "max_new_cards": "New cards per day must be a whole number from 0 to 20.",
+      "desired_retention": "Desired retention must be between 0.80 and 0.95.",
+      "timezone": "Unknown time zone.",
+      "language": "Unknown language.",
+      "reminders": "Unknown reminder choice."
+    },
+    "advanced": "Advanced settings",
+    "groups": {
+      "review": "Reviews",
+      "appearance": "Appearance",
+      "help": "Help",
+      "account": "Account"
+    }
+  },
+  "welcome": {
+    "title1": "Welcome",
+    "title2": "Send a note",
+    "title3": "Validate the cards",
+    "title4": "Studying and the reminder",
+    "title5": "Your turn",
+    "progress": "Step {step} of {total}",
+    "back": "Back",
+    "next": "Next",
+    "skip": "Skip the tour",
+    "finish": "Finish",
+    "navLabel": "Guided tour",
+    "replay": "Replay the guided tour"
+  },
+  "inbox": {
+    "title": "Received mails",
+    "lede": "The latest mails you sent and what became of them. No more receipt mails: only failures are reported.",
+    "empty": "No mail received yet.",
+    "untitled": "(untitled)",
+    "status": {
+      "received": "Received",
+      "processing": "Processing",
+      "done": "Done",
+      "failed": "Failed",
+      "duplicate": "Already in your base"
+    },
+    "partial": "partly read",
+    "ignored": "items ignored",
+    "shortfall": "{requested} asked for, {kept, plural, =0 {none made} other {# made}}{reasons}",
+    "shortfallReasons": ": {list}",
+    "dropped": {
+      "empty": "{n, plural, one {# empty card} other {# empty cards}}",
+      "too_long": "{n, plural, one {# card too long} other {# cards too long}}",
+      "no_question_mark": "{n, plural, one {# without a question mark} other {# without a question mark}}",
+      "yes_no": "{n, plural, one {# yes/no question} other {# yes/no questions}}",
+      "context_reference": "{n, plural, one {# depending on context} other {# depending on context}}",
+      "about_the_author": "{n, plural, one {# about the author} other {# about the author}}",
+      "duplicate": "{n, plural, one {# duplicate} other {# duplicates}}",
+      "over_cap": "{n, plural, one {# over the limit} other {# over the limit}}",
+      "invalid_claim": "{n, plural, one {# with no matching fact} other {# with no matching fact}}",
+      "not_enough_facts": "{n, plural, one {# not enough facts} other {# not enough facts}}"
+    }
+  }
+}

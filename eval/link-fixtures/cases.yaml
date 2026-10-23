@@ -1,0 +1,186 @@
+# Cases for the link stage (R-KB-12): a new page (title and summary) and the shortlisted candidate pages (title and summary).
+# link: candidates that MUST be linked (matched by title). ok: candidates a link to which is acceptable but not required.
+# Any other link is a FALSE LINK, the costly error. Traps (link: [] and ok: []) are candidates that share a field with the
+# new page without a specific connection. Summaries are written for this eval; the model must judge only from what they say.
+cases:
+  # ---- pairs that must be linked ----
+  - id: social-war-caracalla
+    new:
+      title: La guerre sociale
+      summary:
+        - "La guerre sociale (91-88 av. J.-C.) oppose Rome à ses alliés italiens, qui réclament la citoyenneté romaine."
+        - "La loi Julia de 90 av. J.-C. accorde la citoyenneté aux alliés restés fidèles."
+    candidates:
+      - { title: L'édit de Caracalla, summary: ["En 212, l'édit de Caracalla accorde la citoyenneté romaine à presque tous les hommes libres de l'Empire.", "Il achève l'extension progressive de la citoyenneté."] }
+      - { title: L'Empire inca, summary: ["L'Empire inca s'étend le long des Andes avec Cuzco pour capitale.", "Il tombe après la conquête espagnole."] }
+    link: [L'édit de Caracalla]
+    ok: []
+
+  - id: catiline-cicero
+    new:
+      title: La conjuration de Catilina
+      summary:
+        - "En 63 av. J.-C., Catilina, battu aux élections consulaires, prépare un coup de force contre la République."
+        - "Le consul Cicéron la dénonce devant le Sénat et fait exécuter cinq conjurés."
+    candidates:
+      - { title: Cicéron, summary: ["Cicéron est un orateur et homme politique romain, consul en 63 av. J.-C.", "Il a écrit de nombreux traités de rhétorique et de philosophie."] }
+      - { title: La théorie quantitative de la monnaie, summary: ["La quantité de monnaie en circulation détermine le niveau général des prix.", "Friedman en a été le défenseur le plus connu."] }
+    link: [Cicéron]
+    ok: []
+
+  - id: anki-manual-fsrs
+    new:
+      title: Anki manual, scheduling
+      summary:
+        - "Anki schedules reviews with an algorithm; since version 23.10 it can use FSRS instead of the older SM-2 scheduler."
+        - "The manual explains how to set the desired retention and optimise the parameters."
+    candidates:
+      - { title: The FSRS algorithm, summary: ["FSRS models memory with stability, difficulty and retrievability.", "It predicts the probability of recall to schedule the next review."] }
+      - { title: Teotihuacan, summary: ["Teotihuacan is a pre-Columbian city in the Valley of Mexico.", "Its builders are unknown."] }
+    link: [The FSRS algorithm]
+    ok: []
+
+  - id: qhapaq-nan-inca
+    new:
+      title: Le Qhapaq Ñan
+      summary:
+        - "Le Qhapaq Ñan est le réseau routier de l'Empire inca, long d'environ 40 000 km."
+        - "Des coureurs relais, les chasquis, y portaient les messages."
+    candidates:
+      - { title: L'Empire inca, summary: ["L'Empire inca s'étend de la Colombie au Chili avec Cuzco pour capitale.", "Il repose sur la mita et un réseau de routes."] }
+      - { title: La cité de Teotihuacan, summary: ["Teotihuacan est une cité précolombienne du Mexique central."] }
+      - { title: La guerre sociale, summary: ["La guerre sociale oppose Rome à ses alliés italiens à partir de 91 av. J.-C."] }
+    link: [L'Empire inca]
+    ok: []
+
+  - id: pearl-harbor-pacific-war
+    new:
+      title: L'attaque de Pearl Harbor
+      summary:
+        - "Le 7 décembre 1941, l'aviation japonaise attaque la flotte américaine du Pacifique à Pearl Harbor."
+        - "Les États-Unis déclarent la guerre au Japon le lendemain."
+    candidates:
+      - { title: La guerre du Pacifique, summary: ["La guerre du Pacifique oppose le Japon aux Alliés de 1941 à 1945.", "Elle s'ouvre sur des attaques simultanées en Asie du Sud-Est et à Hawaï."] }
+      - { title: Les frameworks de la science politique, summary: ["La théorie du sélectorat explique la survie des dirigeants par la taille du groupe qui les soutient."] }
+    link: [La guerre du Pacifique]
+    ok: []
+
+  - id: haussmann-second-empire
+    new:
+      title: Les transformations haussmanniennes de Paris
+      summary:
+        - "Sous le Second Empire, le préfet Haussmann perce de grands boulevards et rase des quartiers médiévaux."
+        - "Les travaux sont commandés par Napoléon III."
+    candidates:
+      - { title: Napoléon III et le Second Empire, summary: ["Napoléon III règne de 1852 à 1870.", "Son régime lance de grands travaux urbains et favorise l'industrie."] }
+      - { title: Les Frigos de Paris, summary: ["Les Frigos sont un ancien entrepôt frigorifique du 13e arrondissement, devenu lieu d'ateliers d'artistes."] }
+    link: [Napoléon III et le Second Empire]
+    ok: []
+
+  # ---- traps: same field, no specific connection ----
+  - id: incas-vs-teotihuacan
+    new:
+      title: L'Empire inca
+      summary:
+        - "L'Empire inca s'étend le long des Andes avec Cuzco pour capitale."
+        - "Il tombe en 1533 après la capture d'Atahualpa par Pizarro."
+    candidates:
+      - { title: La cité de Teotihuacan, summary: ["Teotihuacan est une cité précolombienne du Mexique central.", "Les Aztèques l'ont trouvée en ruine."] }
+      - { title: Cicéron, summary: ["Cicéron est un orateur et consul romain de 63 av. J.-C."] }
+    link: []
+    ok: []
+
+  - id: cicero-vs-friedman
+    new:
+      title: Cicéron et la conjuration de Catilina
+      summary:
+        - "Cicéron, consul en 63 av. J.-C., déjoue la conjuration de Catilina."
+        - "Il est exilé en 58 av. J.-C. puis rappelé en 57."
+    candidates:
+      - { title: Friedman et le monétarisme, summary: ["Milton Friedman soutient que l'inflation est toujours un phénomène monétaire.", "Il défend une règle de croissance de la masse monétaire."] }
+      - { title: Les abeilles, summary: ["Les abeilles butinent le nectar et fabriquent le miel."] }
+    link: []
+    ok: []
+
+  - id: fsrs-vs-incas
+    new:
+      title: The FSRS algorithm
+      summary:
+        - "FSRS models memory with stability, difficulty and retrievability."
+        - "It predicts the probability of recall to schedule the next review."
+    candidates:
+      - { title: L'Empire inca, summary: ["L'Empire inca s'étend le long des Andes avec Cuzco pour capitale.", "Les Incas enregistraient leurs comptes avec des quipus."] }
+      - { title: La guerre sociale, summary: ["La guerre sociale oppose Rome à ses alliés italiens à partir de 91 av. J.-C."] }
+    link: []
+    ok: []
+
+  - id: two-emperors
+    new:
+      title: Auguste et la fondation du Principat
+      summary:
+        - "Octavien, devenu Auguste en 27 av. J.-C., fonde le Principat et met fin aux guerres civiles."
+        - "Il garde les apparences des institutions républicaines."
+    candidates:
+      - { title: Marc Aurèle, summary: ["Marc Aurèle est empereur de 161 à 180.", "Il est l'auteur des Pensées, un texte de philosophie stoïcienne."] }
+      - { title: Trajan et l'extension maximale de l'Empire, summary: ["Trajan règne de 98 à 117 et conquiert la Dacie.", "L'Empire atteint sous lui son extension maximale."] }
+    link: []
+    ok: []
+
+  - id: two-painters
+    new:
+      title: Andy Warhol
+      summary:
+        - "Andy Warhol est un artiste américain du pop art, connu pour ses sérigraphies de boîtes de soupe Campbell."
+        - "Il fonde la Factory à New York dans les années 1960."
+    candidates:
+      - { title: Claude Monet, summary: ["Claude Monet est un peintre impressionniste français.", "Il peint les Nymphéas dans son jardin de Giverny."] }
+    link: []
+    ok: []
+
+  - id: two-ml-papers
+    new:
+      title: The Bitter Lesson
+      summary:
+        - "Rich Sutton argues that general methods that scale with computation beat methods built on human knowledge."
+        - "Search and learning are the two methods that scale."
+    candidates:
+      - { title: Llama 3.2 models, summary: ["Llama 3.2 includes 1B and 3B text-only models and larger vision models.", "It supports a context length of 128K tokens."] }
+    link: []
+    ok: []
+
+  - id: bees-vs-wasps
+    new:
+      title: Les guêpes
+      summary:
+        - "Les guêpes sont des insectes sociaux qui construisent des nids en papier mâché."
+        - "Elles se nourrissent d'insectes et de fruits."
+    candidates:
+      - { title: Les abeilles, summary: ["Les abeilles butinent le nectar des fleurs et fabriquent le miel dans la ruche.", "Elles communiquent par la danse."] }
+    link: []
+    ok: []
+
+  # ---- mixed ----
+  - id: lex-julia-mixed
+    new:
+      title: La loi Julia de 90 av. J.-C.
+      summary:
+        - "La loi Julia accorde la citoyenneté romaine aux alliés italiens restés fidèles pendant la guerre sociale."
+        - "Elle vise à empêcher de nouveaux alliés de rejoindre la révolte."
+    candidates:
+      - { title: La guerre sociale, summary: ["La guerre sociale (91-88 av. J.-C.) oppose Rome à ses alliés italiens.", "Les Marses et les Samnites sont les principaux insurgés."] }
+      - { title: L'attaque de Pearl Harbor, summary: ["Le 7 décembre 1941, l'aviation japonaise attaque la flotte américaine à Pearl Harbor."] }
+      - { title: Les Frigos de Paris, summary: ["Les Frigos sont un ancien entrepôt frigorifique du 13e arrondissement."] }
+    link: [La guerre sociale]
+    ok: []
+
+  - id: weak-candidates
+    new:
+      title: Le café
+      summary:
+        - "Le café est une boisson préparée à partir des graines torréfiées du caféier."
+        - "Le Brésil en est le premier producteur mondial."
+    candidates:
+      - { title: La théorie des jeux, summary: ["La théorie des jeux étudie les décisions stratégiques de joueurs interdépendants.", "L'équilibre de Nash en est un concept central."] }
+      - { title: Les abeilles, summary: ["Les abeilles butinent le nectar des fleurs et fabriquent le miel."] }
+    link: []
+    ok: []

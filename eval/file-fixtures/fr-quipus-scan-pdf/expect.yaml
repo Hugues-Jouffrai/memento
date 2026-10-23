@@ -1,0 +1,12 @@
+# Generated with known content by scripts/make-eval-file-fixtures.ts (no review needed).
+language: fr
+route: vision
+must_transcribe:
+  - { id: quipu, any: ["quipus"] }
+  - { id: quipucamayoc, any: ["quipucamayocs"] }
+  - { id: mita, any: ["mit'a", "mit’a"] }
+  - { id: mysterieuse, any: ["mystérieuse"] }
+must_cover:
+  - { id: quipu, any: ["quipu"] }
+  - { id: quipucamayoc, any: ["quipucamayoc"] }
+  - { id: mita, any: ["mit'a", "mit’a", "mita"] }

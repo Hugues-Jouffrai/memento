@@ -1,0 +1,10 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: note
+note: Pairs with the Sweller PDF (M2, French/English merge test).
+must_cover:
+  - { id: sweller, any: ["Sweller"] }
+  - { id: working-memory, any: ["working memory"] }
+  - { id: effects, any: ["Worked Example", "Expertise Reversal"] }
+forbidden: []

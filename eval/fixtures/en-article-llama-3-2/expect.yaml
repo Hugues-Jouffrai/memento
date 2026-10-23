@@ -1,0 +1,10 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: article
+note: Web capture with navigation boilerplate; the input is truncated for the smoke run.
+must_cover:
+  - { id: vision-models, any: ["11B", "90B"] }
+  - { id: edge-models, any: ["1B", "3B"] }
+  - { id: llama-stack, any: ["Llama Stack"] }
+forbidden: []

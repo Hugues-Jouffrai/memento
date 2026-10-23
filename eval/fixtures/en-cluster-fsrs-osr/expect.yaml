@@ -1,0 +1,9 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: web_page
+cluster: fsrs
+must_cover:
+  - { id: fsrs, any: ["FSRS", "Free Spaced Repetition Scheduler"] }
+  - { id: memory-model, any: ["stability", "retrievability", "difficulty"] }
+forbidden: []

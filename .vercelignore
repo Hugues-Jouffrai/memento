@@ -1,0 +1,11 @@
+/.env*
+/eval
+/docs
+/tests
+/supabase
+/test-results
+/.github
+/.githooks
+/scripts
+playwright.config.ts
+vitest.integration.config.ts

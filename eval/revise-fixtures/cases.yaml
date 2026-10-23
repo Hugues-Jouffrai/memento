@@ -1,0 +1,209 @@
+# Cases for the revise stage (R-KB-06): a page's existing facts, a new source's facts, and the findings expected.
+# expect: [] means NO finding is right (a "trap": the facts look alike but do not disagree). A finding is
+# {kind, existing, new} with 1-based claim numbers. False revisions are worse than missed ones, so traps weigh most.
+# kind "contradiction": both facts kept. kind "revise": the new source explicitly updates or corrects the old fact.
+# Claim texts are written for this eval (invented or generic figures), the model must judge only from what they say.
+cases:
+  # ---- real disagreements ----
+  - id: date-conflict-fr
+    title: Guerre sociale
+    existing:
+      - "La guerre sociale oppose Rome à ses alliés italiens à partir de 91 av. J.-C."
+      - "La loi Julia accorde la citoyenneté romaine aux alliés restés fidèles en 90 av. J.-C."
+      - "Le conflit se termine vers 88 av. J.-C."
+    incoming:
+      - "La loi Julia, qui accorde la citoyenneté romaine aux alliés restés fidèles, est votée en 89 av. J.-C."
+      - "Les Marses et les Samnites furent les principaux insurgés."
+    expect:
+      - { kind: contradiction, existing: 2, new: 1 }
+
+  - id: date-conflict-en
+    title: Foundation of the city
+    existing:
+      - "The city was founded in 1325 by the Mexica on an island in Lake Texcoco."
+      - "The city had a causeway system linking it to the shore."
+    incoming:
+      - "According to the chronicle, the city was founded in 1345 on an island in the lake."
+      - "Three main causeways connected the island to the mainland."
+    expect:
+      - { kind: contradiction, existing: 1, new: 1 }
+
+  - id: number-conflict
+    title: Llama 3.2 models
+    existing:
+      - "Llama 3.2 includes a 1B and a 3B text-only model."
+      - "The largest Llama 3.2 vision model has 90 billion parameters."
+    incoming:
+      - "The largest Llama 3.2 vision model has 70 billion parameters."
+      - "Llama 3.2 supports a context length of 128K tokens."
+    expect:
+      - { kind: contradiction, existing: 2, new: 1 }
+
+  - id: explicit-update
+    title: Population of the metropolitan area
+    existing:
+      - "The metropolitan area has about 9 million inhabitants (2010 census)."
+      - "The area is divided into 16 boroughs."
+    incoming:
+      - "The 2020 census corrects the earlier figure: the metropolitan area now counts 9.2 million inhabitants, replacing the 2010 estimate."
+      - "A new metro line opened in 2021."
+    expect:
+      - { kind: revise, existing: 1, new: 1 }
+
+  - id: name-conflict
+    title: Marilyn series
+    existing:
+      - "Warhol began the Marilyn Monroe silkscreens in August 1962."
+      - "The series is based on a publicity photograph for the film Niagara."
+    incoming:
+      - "The Marilyn series is based on a publicity photograph for the film Gentlemen Prefer Blondes."
+    expect:
+      - { kind: contradiction, existing: 2, new: 1 }
+
+  # ---- traps: no finding is the right answer ----
+  - id: trap-rounding
+    title: Inca expansion
+    existing:
+      - "The Inca imperial expansion began around 1438 under Pachacuti."
+      - "The empire stretched about 4,000 km along the Andes."
+    incoming:
+      - "The Inca expansion started in the early 15th century."
+      - "The empire extended roughly 4,000 kilometres from north to south."
+    expect: []
+
+  - id: trap-translation
+    title: Teotihuacan
+    existing:
+      - "Teotihuacan flourished between roughly 100 BCE and 550 CE."
+      - "The Pyramid of the Sun is the largest structure in the city."
+    incoming:
+      - "Teotihuacan a prospéré entre environ 100 av. J.-C. et 550 apr. J.-C."
+      - "La pyramide du Soleil est le plus grand monument de la cité."
+    expect: []
+
+  - id: trap-more-detail
+    title: FSRS
+    existing:
+      - "FSRS is a spaced repetition algorithm based on the DSR model."
+      - "FSRS predicts the probability of recall for each card."
+    incoming:
+      - "In the DSR model, D is difficulty, S is stability and R is retrievability."
+      - "FSRS parameters are optimised on the user's review history."
+    expect: []
+
+  - id: trap-different-events
+    title: Cicero
+    existing:
+      - "Cicero was born in 106 BCE in Arpinum."
+      - "Cicero was elected consul in 63 BCE."
+    incoming:
+      - "Cicero was exiled in 58 BCE and recalled in 57 BCE."
+      - "Cicero was killed in 43 BCE on the orders of Mark Antony."
+    expect: []
+
+  - id: trap-general-vs-specific
+    title: Cognitive load
+    existing:
+      - "Cognitive load theory was developed by John Sweller."
+      - "Working memory is limited in capacity."
+    incoming:
+      - "Working memory can hold about four chunks of new information at a time."
+      - "Sweller introduced the theory in the late 1980s."
+    expect: []
+
+  - id: trap-different-aspect
+    title: Free French armoured division
+    existing:
+      - "The 2nd Armoured Division was formed on 24 August 1943 in Morocco."
+      - "General Leclerc commanded the division."
+    incoming:
+      - "The division entered Paris on 24 August 1944."
+      - "It fought in Alsace in the winter of 1944-1945."
+    expect: []
+
+  - id: trap-same-number-different-thing
+    title: Anki scheduling
+    existing:
+      - "The default desired retention in Anki is 0.9."
+      - "The maximum interval is 36500 days by default."
+    incoming:
+      - "Desired retention can be set between 0.7 and 0.99."
+      - "A desired retention of 0.97 greatly increases the review load."
+    expect: []
+
+  - id: trap-units
+    title: Pyramid of the Sun
+    existing:
+      - "The Pyramid of the Sun is about 65 metres high."
+    incoming:
+      - "The Pyramid of the Sun stands roughly 215 feet tall."
+      - "Its base measures about 220 by 230 metres."
+    expect: []
+
+  - id: trap-opinion-vs-fact
+    title: The Bitter Lesson
+    existing:
+      - "Rich Sutton argues that general methods that leverage computation win in the long run."
+    incoming:
+      - "Critics argue that the lesson underestimates the role of human knowledge in AI progress."
+    expect: []
+
+  - id: trap-clean-merge
+    title: Monetarism
+    existing:
+      - "Milton Friedman is the best-known monetarist economist."
+      - "Monetarism holds that the money supply drives inflation."
+    incoming:
+      - "Friedman received the Nobel Prize in Economics in 1976."
+      - "Monetarists favour a fixed rule for money supply growth."
+    expect: []
+
+  # ---- open questions (revise/v2): "resolves" lists the 1-based questions the new facts clearly answer ----
+  - id: question-answered
+    title: Teotihuacan
+    existing:
+      - "Teotihuacan est une cité précolombienne du Mexique central."
+      - "La pyramide du Soleil domine l'avenue des Morts."
+    incoming:
+      - "Les fouilles ont établi que la cité a été abandonnée vers 550 apr. J.-C. après un incendie des bâtiments du centre."
+    expect: []
+    questions:
+      - "Quand et pourquoi Teotihuacan a-t-elle été abandonnée ?"
+      - "Qui a bâti Teotihuacan ?"
+    resolves: [1]
+
+  - id: question-same-subject-not-answered
+    title: Teotihuacan
+    existing:
+      - "Teotihuacan est une cité précolombienne du Mexique central."
+    incoming:
+      - "La pyramide de la Lune se trouve au nord de l'avenue des Morts."
+      - "La cité comptait plusieurs dizaines de milliers d'habitants à son apogée."
+    expect: []
+    questions:
+      - "Qui a bâti Teotihuacan ?"
+      - "Quand et pourquoi Teotihuacan a-t-elle été abandonnée ?"
+    resolves: []
+
+  - id: question-partial-answer
+    title: Les abeilles
+    existing:
+      - "Les abeilles communiquent par une danse."
+    incoming:
+      - "Certains chercheurs pensent que les abeilles utilisent le soleil comme repère."
+    expect: []
+    questions:
+      - "Comment les abeilles s'orientent-elles pour retrouver la ruche ?"
+    resolves: []
+
+  - id: question-answered-english
+    title: FSRS
+    existing:
+      - "FSRS predicts the probability of recall for each card."
+    incoming:
+      - "The default desired retention in FSRS is 90%, and users can change it between 70% and 99%."
+    expect: []
+    questions:
+      - "What is the default desired retention in FSRS?"
+    resolves: [1]
+

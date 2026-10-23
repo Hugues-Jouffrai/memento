@@ -1,0 +1,10 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: fast_moving_data
+note: Prices change on dated schedules. Claims must keep the date or the "snapshot" caveat.
+must_cover:
+  - { id: flash-price, any: ["3.8 Flash"] }
+  - { id: price-change, any: ["Jan 1, 2027", "2027"] }
+  - { id: batch, any: ["Batch", "batch"] }
+forbidden: []

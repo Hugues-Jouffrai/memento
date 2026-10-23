@@ -1,0 +1,11 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: notes
+note: Notes are in English (the plan listed them as French text, which they are not). A real French text fixture is still to be chosen.
+must_cover:
+  - { id: mistral, any: ["Mistral"] }
+  - { id: arr, any: ["400M", "ARR"] }
+  - { id: deepseek, any: ["DeepSeek"] }
+  - { id: google, any: ["Argon", "Hassabis"] }
+forbidden: []

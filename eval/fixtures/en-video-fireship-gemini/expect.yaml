@@ -1,0 +1,11 @@
+# DRAFT by Claude, to be reviewed by Hugues.
+subsets: [smoke]
+language: en
+kind: video_transcript
+note: Description is in French, the transcript is in English.
+must_cover:
+  - { id: gemini-release, any: ["Gemini 2.0"] }
+  - { id: cost, any: ["fraction of the cost", "cost"] }
+  - { id: pdf, any: ["6,000 pages", "PDF"] }
+  - { id: competitors, any: ["deep seek", "DeepSeek", "R1", "o3"] }
+forbidden: []
