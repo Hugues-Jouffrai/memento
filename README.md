@@ -12,7 +12,7 @@ Mais quelle méthode ?
 
 Mes recherches sur l'état des connaissances en sciences du savoir m'ont amené à redécouvrir ce qu'étudiant je pratiquais déjà : l'interrogation, la répétition et la régularité dans l'apprentissage.
 
-Il s'agit avec Memento d'astreindre mon cerveau à la discipline scolaire qui fonctionne si bien pour remplir notre mémoire de connaissances fiables et d'utiliser la technologie pour accélérer le travail fastidieux de l'élève assisté de son professeur, le fichage et l'interrogation.
+Il s'agit avec Memento d'astreindre mon cerveau à la discipline scolaire qui fonctionne si bien pour remplir notre mémoire de connaissances fiables et d'utiliser la technologie pour accélérer le travail fastidieux de l'élève assisté de son professeur : le fichage et l'interrogation.
 
 Mon ambition est de créer un outil qui permette de continuer à entrainer ma mémoire, et peut être celle des autres, au cours de ma vie pour augmenter mes connaissances sur les sujets de mon choix bien après mes années étudiantes.
 
