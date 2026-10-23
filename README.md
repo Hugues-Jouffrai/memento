@@ -4,29 +4,31 @@
 
 Ce projet est né d'une frustration. Celle d'une curiosité qui ne se satisfait pas de découvrir les réponses à ses questions mais qui veut vraiment comprendre et retenir.
 
-*This project was born out of frustration: that of a curiosity that is not satisfied with finding the answers to its questions, but wants to truly understand and remember.*
-
 Nous vivons dans un monde d'abondance d'information et de connaissances. Cependant la quantité d'information disponible, lue ou vue, même de qualité, ne se transforme pas automatiquement en savoir. Nous pouvons apprendre des quantités impressionnantes d'informations, lire des livres entiers sur des sujets précis, et pourtant n'en retenir qu'une fraction.
-
-*We live in a world of abundant information and knowledge. Yet the amount of information available, read or watched, even of good quality, does not automatically turn into knowledge. We can take in impressive quantities of information, read whole books on specific subjects, and still retain only a fraction of it.*
 
 En effet sans méthode, le cerveau oublie.
 
-*Indeed, without a method, the brain forgets.*
-
 Mais quelle méthode ?
-
-*But which method?*
 
 Mes recherches sur l'état des connaissances en sciences du savoir m'ont amené à redécouvrir ce qu'étudiant je pratiquais déjà : l'interrogation, la répétition et la régularité dans l'apprentissage.
 
-*My research into the state of knowledge in the science of learning led me to rediscover what I already practised as a student: questioning, repetition and regularity in learning.*
-
 Il s'agit avec Memento d'astreindre mon cerveau à la discipline scolaire qui fonctionne si bien pour remplir notre mémoire de connaissances fiables et d'utiliser la technologie pour accélérer le travail fastidieux de l'élève assisté de son professeur, le fichage et l'interrogation.
 
-*With Memento, the aim is to hold my brain to the schoolroom discipline that works so well for filling our memory with reliable knowledge, and to use technology to speed up the tedious work of the pupil helped by their teacher: making index cards and being quizzed.*
-
 Mon ambition est de créer un outil qui permette de continuer à entrainer ma mémoire, et peut être celle des autres, au cours de ma vie pour augmenter mes connaissances sur les sujets de mon choix bien après mes années étudiantes.
+
+---
+
+*This project was born out of frustration: that of a curiosity that is not satisfied with finding the answers to its questions, but wants to truly understand and remember.*
+
+*We live in a world of abundant information and knowledge. Yet the amount of information available, read or watched, even of good quality, does not automatically turn into knowledge. We can take in impressive quantities of information, read whole books on specific subjects, and still retain only a fraction of it.*
+
+*Indeed, without a method, the brain forgets.*
+
+*But which method?*
+
+*My research into the state of knowledge in the science of learning led me to rediscover what I already practised as a student: questioning, repetition and regularity in learning.*
+
+*With Memento, the aim is to hold my brain to the schoolroom discipline that works so well for filling our memory with reliable knowledge, and to use technology to speed up the tedious work of the pupil helped by their teacher: making index cards and being quizzed.*
 
 *My ambition is to build a tool that lets me keep training my memory, and perhaps that of others, throughout my life, so as to grow my knowledge of the subjects I choose well after my student years.*
 
