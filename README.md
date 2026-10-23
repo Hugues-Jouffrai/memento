@@ -24,7 +24,7 @@ Mon ambition est de créer un outil qui permette de continuer à entrainer ma m�
 
 *Indeed, without a method, the brain forgets.*
 
-*But which method?*
+*But what method?*
 
 *My research into the state of knowledge in the science of learning led me to rediscover what I already practised as a student: questioning, repetition and regularity in learning.*
 
