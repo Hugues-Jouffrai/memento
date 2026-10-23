@@ -46,7 +46,7 @@ Mon ambition est de créer un outil qui permette de continuer à entrainer ma m�
 
 The interface is available in French and English, comes in four visual styles, and is designed phone-first. The product runs as a closed beta at [mailtomemento.com](https://mailtomemento.com).
 
-## Engineering choices
+## Design choices
 
 - **Rebuilt from scratch** after a critical analysis of a first version's failures. Numbered requirements (`R-AREA-NN`, `docs/02-spec.md`), a milestone plan (`docs/03-plan.md`), and a dated decision log (`docs/decisions.md`, 70 decisions).
 - **Nothing is done without a test.** Each test carries the ID of the requirement it covers.
